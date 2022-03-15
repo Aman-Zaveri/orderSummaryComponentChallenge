@@ -1,0 +1,127 @@
+body {
+    font-family: "Red Hat Display", sans-serif;
+    margin: 0;
+    background: hsl(225, 100%, 94%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 15px;
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+.content {
+    background: white;
+    display: grid;
+    place-items: center;
+    width: 20em;
+    border-radius: 10px;
+    box-shadow: 0px 10px 13px -7px #ccc;
+
+}
+
+.dancing {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.title {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-top: 1.4em;
+    font-size: 20px;
+}
+
+.description {
+    text-align: center;
+    width: 80%;
+    font-size: 13px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    line-height: 20px;
+}
+
+.plan {
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.left-plan {
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+    gap: 3px;
+}
+
+.annual-plan {
+    font-weight: 700;
+}
+
+.price-per-year {
+    color: hsl(224, 23%, 55%);
+}
+
+.music {
+    height: 2em;
+}
+
+.change {
+    color: hsl(245, 75%, 52%);
+    font-size: 0.7em;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.payment {
+    text-align: center;
+    font-size: 0.6em;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 7px;
+    color: white;
+    width: 70%;
+    padding: 1em 18px;
+    margin: 1.4em auto;
+    box-shadow: 0px 10px 13px -7px hsla(245, 75%, 52%, 0.609);
+    cursor: pointer;
+
+    &:hover {
+        background-color: hsl(245, 67%, 59%);
+    }
+}
+
+.cancel {
+    color: hsl(245, 75%, 52%);
+    font-size: 0.7em;
+    margin-bottom: 2em;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
